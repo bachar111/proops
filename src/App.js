@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Profile from "./Profile/Profile";
+import tof from "./assets/454545632.jpg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Profile Fullname="bachar ben mamia" Bio="Student" Profession="Web developer">
+        <img style={{ width: "10%", height: "10%" }} src={tof} alt="tof" />
+        </Profile>
+      </div>
     </div>
   );
 }
 
 export default App;
+
